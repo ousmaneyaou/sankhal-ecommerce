@@ -1,0 +1,153 @@
+/* register.css */
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); 
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.register-page h2 {
+    font-size: 36px;
+    color: #2c3e50; /* Couleur sombre et professionnelle */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-page .message {
+    color: #00ff08; 
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color:#615e5e;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.register-page form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Effet de flou */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.register-page label {
+    font-size: 16px;
+    color: #34495e; /* Couleur sombre pour les labels */
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 600;
+}
+
+.register-page input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.register-page input:focus {
+    border-color: #ff6f61; /* Couleur vive au focus */
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.4);
+    outline: none;
+}
+
+.register-page button {
+    background: linear-gradient(135deg, #ff6f61, #ff9a9e); /* Dégradé orange */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
+}
+
+.register-page button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 111, 97, 0.4);
+}
+
+.register-page .register-link {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-page .register-link a {
+    color: #ff6f61; /* Couleur vive pour le lien */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.register-page .register-link a:hover {
+    color: #e74c3c; /* Couleur plus foncée au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-page {
+        padding: 10px;
+    }
+
+    .register-page h2 {
+        font-size: 28px;
+    }
+
+    .register-page form {
+        padding: 20px;
+    }
+
+    .register-page input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .register-page button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .register-page .register-link {
+        font-size: 12px;
+    }
+}

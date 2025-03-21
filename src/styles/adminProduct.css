@@ -1,0 +1,203 @@
+/* adminProduct.css */
+
+.admin-product-list {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.admin-product-list h2 {
+    font-size: 2rem;
+    color: #232f3e;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.admin-product-list .error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.admin-product-list > button.product-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding: 0.75rem;
+    margin: 0 auto 1.5rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-list > button.product-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.admin-product-list > button.product-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.admin-product-list li:hover {
+    background-color: #f9f9f9;
+}
+
+.admin-product-list li span {
+    font-size: 1.1rem;
+    color: #333;
+    flex-grow: 1;
+}
+
+.admin-product-list li button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-list li button.product-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+.admin-product-list li button.product-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.admin-product-list li button.product-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-list li button.product-btn-delete {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.admin-product-list li button.product-btn-delete:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.admin-product-list li button.product-btn-delete:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination Styles */
+.admin-product-list .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.admin-product-list .pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    background-color: #f0c14b;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-list .pagination button:hover {
+    background-color: #fab506;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.admin-product-list .pagination button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-list .pagination button.active {
+    background-color: #f5b106;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-product-list {
+        padding: 1rem;
+    }
+
+    .admin-product-list h2 {
+        font-size: 1.75rem;
+    }
+
+    .admin-product-list > button.product-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .admin-product-list li span {
+        font-size: 1rem;
+    }
+
+    .admin-product-list li button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-product-list h2 {
+        font-size: 1.5rem;
+    }
+
+    .admin-product-list > button.product-btn {
+        max-width: 100%;
+    }
+
+    .admin-product-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .admin-product-list li button {
+        width: 100%;
+    }
+}

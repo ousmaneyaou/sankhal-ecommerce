@@ -1,0 +1,108 @@
+/* addCategory.css */
+
+.add-category-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.add-category-page .message {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.category-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.category-form h2 {
+    font-size: 1.75rem;
+    color: #232f3e;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.category-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-form input:focus {
+    border-color: #ff9900;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
+}
+
+.category-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff9900;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-form button:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.category-form button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-category-page {
+        padding: 1rem;
+    }
+
+    .category-form {
+        padding: 1.5rem;
+    }
+
+    .category-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .category-form input {
+        padding: 0.5rem;
+    }
+
+    .category-form button {
+        padding: 0.5rem;
+    }
+}

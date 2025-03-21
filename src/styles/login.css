@@ -1,0 +1,132 @@
+/* login.css */
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.register-page h2 {
+    margin-top: -100px;
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.register-page .message {
+    color: #00ff08;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #615e5e;
+    border: 1px solid #00ff08;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-page form {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-page label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 600;
+}
+
+.register-page input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.register-page input:focus {
+    border-color: #d8a62b;
+    outline: none;
+}
+
+.register-page button {
+    background-color: #d8a62b;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-page button:hover {
+    background-color: #d8a62b;
+    transform: scale(1.05);
+}
+
+.register-page .register-link {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-page .register-link a {
+    color: #d8a62b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.register-page .register-link a:hover {
+    color: #d8a62b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-page {
+        padding: 10px;
+    }
+
+    .register-page h2 {
+        font-size: 28px;
+    }
+
+    .register-page form {
+        padding: 20px;
+    }
+
+    .register-page input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .register-page button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .register-page .register-link {
+        font-size: 12px;
+    }
+}

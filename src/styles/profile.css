@@ -1,0 +1,177 @@
+/* profile.css */
+
+.profile-page {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Dégradé de fond */
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Titre de la page */
+.profile-page h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff9900, #ff6600); /* Dégradé pour le titre */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Message d'erreur */
+.error-message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #ff0000;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Informations utilisateur */
+.profile-page p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.profile-page p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Section Adresse */
+.profile-page h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+}
+
+.profile-page .address-info {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-page .address-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton d'adresse */
+.profile-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff9900;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: #ff6600;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 102, 0, 0.3);
+}
+
+/* Historique des commandes */
+.profile-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-page ul li {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-page ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-page ul li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-page ul li img:hover {
+    transform: scale(1.05);
+}
+
+.profile-page ul li div {
+    flex: 1;
+}
+
+.profile-page ul li div p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.profile-page ul li div p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff9900;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #ff6600;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 102, 0, 0.3);
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    color: #888;
+}
